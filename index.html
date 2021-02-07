@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   <link type="text/css" rel="stylesheet" media="all" href="/light.css" id="theme_css" />
+   <link type="text/css" rel="stylesheet" media="all" href="css/light.css" id="theme_css" />
    <link rel="stylesheet" href="css/style.css">
    <!-- <link rel="stylesheet" href="less/less.style2.css"> -->
    <script>
@@ -21,11 +21,11 @@
 
 
             if (check) {
-               element.href = '../dark.css';
+               element.href = '../css/dark.css';
                element.classList.remove('light')
                element.classList.add('dark');
             } else {
-               element.href = '../light.css';
+               element.href = '../css/light.css';
                element.classList.remove('dark')
                element.classList.add('light');
             }
@@ -39,6 +39,7 @@
 
 <body>
 <header>
+   <h1>Робота з GitHub</h1>
    <div class="container">
       <button class="nav__toggle" id="nav__toggle" type="button">
          <span class="nav__toggle__item">Menu</span>
