@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
    // $(".fancybox").fancybox({
    //    openEffect: "none",
    //    closeEffect: "none",
@@ -28,13 +28,14 @@ $(document).ready(function () {
    var introH = $("#intro").innerHeight();
    var header = $("#header");
    var scrollOffset = $(window).scrollTop();
-   // console.log(introH);
-   // console.log(scrollOffset);
+   console.log(introH);
+   console.log(scrollOffset);
    const mediaQuery = window.matchMedia('(max-width: 993px)')
 
    checkScroll(scrollOffset);
 
    $(window).on("scroll", function () {
+      introH = $("#intro").innerHeight();
       scrollOffset = $(this).scrollTop();
       // console.log(scrollOffset);
       checkScroll(scrollOffset);

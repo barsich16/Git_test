@@ -60,6 +60,9 @@
                   <a class="nav-link text-light" id="testing-tab" data-toggle="tab" href="#testing" role="tab" data-scroll="#testing" aria-controls="testing" aria-selected="false">Тестирование</a>
                </li>
                <li class="nav-item">
+                  <a class="nav-link text-light" id="testing-tab" data-toggle="tab" href="#git" role="tab" data-scroll="#git" aria-controls="git" aria-selected="false">Git</a>
+               </li>
+               <li class="nav-item">
                   <a class="nav-link text-light" id="contacts-tab" data-toggle="tab" href="#contacts" role="tab" data-scroll="#contacts" aria-controls="contacts" aria-selected="false">Контакты</a>
                </li>
             </ul>
@@ -362,7 +365,7 @@
       </div>
 
       <div class="wrapper">
-         <nav class="mynav">
+         <nav class="mynav" id="git">
             <button onclick="switchTheme()" class="mynav__theme">Change theme</button>
             <ul class="mynav__menu">
                <li class="mynav__item"><a href="#" class="mynav__link">Home</a></li>
@@ -437,6 +440,25 @@
          </section>
       </div>
 
+      <div class="container">
+         <div class="row py-2">
+            <div class="col-md-4 col-lg-3 col-xl-2 border bg-light">
+               <h4 class="p-1">Фильтры:</h4>
+               <div id = "myTools">
+               </div>
+               <h4>Корзина:</h4>
+               <p id="myBasket">В даннвй момент корзина пустая</p>
+            </div>
+            <div class="col-md-8 col-lg-9 col-xl-10 border">
+               <h4 class="text-center p-1">Каталог товаров:</h4>
+               <div class="container">
+                  <div class="row" id = "rowts">				
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
 
       <form class="col-sm-6 form__footer" id="contacts">
          <div class="form-group">
@@ -464,6 +486,28 @@
    </div>
 </div>
 
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title  m-1" id="exampleModalLabel">Купить этот товар?</h5>
+				<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden = "true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<form>
+						<label for="inputquantity">Сколько нужно?</label>
+						<input type="text" class="form-control" id="inputquantity" placeholder="Целые числа" value="1">
+						<small id="modlalMessag" class="form-text text-muted"></small>
+						<button type="button" id="modlalBtn" class="btn btn-primary my-3" value="1" onclick=myByBtn(this.value)>Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
    <div class="modal-dialog" role="document">

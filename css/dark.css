@@ -50,7 +50,8 @@ a {
   padding: 0 15px;
 }
 .mynav__item:hover {
-  background-color: #eb6562;
+  background-color: #fff;
+  color: #000;
 }
 .mynav__link {
   font-size: 17px;
